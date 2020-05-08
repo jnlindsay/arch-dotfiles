@@ -1,0 +1,10 @@
+Xft.dpi: 192
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.rgba: rgb
+
+URxvt.font: xft:SourceCodePro:style=Bold:size=11
+URxvt.background: black
+URxvt.foreground: white
