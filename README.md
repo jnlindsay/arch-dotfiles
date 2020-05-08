@@ -9,3 +9,9 @@ Dotfiles for my Arch Linux installation
 - wallpaper set with Awesome (and not feh etc.)
 - assuming two monitors
 - dependecies: rofi
+
+Other:
+
+- acpilight: make sure to reboot
+- xorg.conf.d file for natural scrolling
+- xbindkeysrc with GUI
