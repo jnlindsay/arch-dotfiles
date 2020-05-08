@@ -15,3 +15,4 @@ Other:
 - acpilight: make sure to reboot
 - xorg.conf.d file for natural scrolling
 - xbindkeysrc with GUI
+- use Vundle: vim-latex
