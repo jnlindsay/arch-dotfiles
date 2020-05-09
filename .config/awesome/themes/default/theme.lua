@@ -9,11 +9,12 @@ local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
 local themes_path = gfs.get_themes_dir()
 
+-- :: JEREMY'S ::
+
 local theme = {}
 
 --theme.font          = "Jost* 9"
 theme.font          = "Apercu 9"
-
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#535d6c"
@@ -101,6 +102,7 @@ theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/m
 
 --theme.wallpaper = themes_path.."default/backgroun.png"
 theme.wallpaper = "~/.config/awesome/themes/default/jfsebastian.png"
+--theme.wallpaper = "~/.config/awesome/themes/default/jfsebastian_corrected.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
@@ -128,6 +130,20 @@ theme.awesome_icon = theme_assets.awesome_icon(
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
 theme.icon_theme = nil
+
+-- :: JEREMY'S ::
+theme.taglist_font = "Noto Sans CJK TC"
+theme.tagnames = {
+    "一",
+    "二",
+    "三",
+    "四",
+    "五",
+    "六",
+    "七",
+    "八",
+    "九"
+}
 
 return theme
 

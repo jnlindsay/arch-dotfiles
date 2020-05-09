@@ -13,38 +13,39 @@ URxvt.internalBorder: 20
 URxvt.externalBorder: 0
 
 ! special
-*.foreground:   #e9ddde
-*.background:   #040102
-*.cursorColor:  #e9ddde
+*.foreground:   #e0dfe1
+*.background:   #050009
+*.cursorColor:  #e0dfe1
 
 ! black
-*.color0:       #070303
-*.color8:       #b8a37e
+*.color0:       #040404
+*.color8:       #a095da
 
 ! red
-*.color1:       #1d0f11
-*.color9:       #99c4bf
+*.color1:       #131315
+*.color9:       #4d886d
 
 ! green
-*.color2:       #351f22
-*.color10:      #719591
+*.color2:       #252429
+*.color10:      #3eb4c8
 
 ! yellow
-*.color3:       #56343a
-*.color11:      #d69ddf
+*.color3:       #3e3d43
+*.color11:      #d7742d
 
 ! blue
-*.color4:       #805058
-*.color12:      #6c9662
+*.color4:       #5d5c65
+*.color12:      #f39360
 
 ! magenta
-*.color5:       #b1717c
-*.color13:      #978769
+*.color5:       #83828a
+*.color13:      #8776d8
 
 ! cyan
-*.color6:       #c9a7ac
-*.color14:      #8dcb7e
+*.color6:       #afafb4
+*.color14:      #d25aa9
 
 ! white
-*.color7:       #ebe0e1
-*.color15:      #c96dd5
+*.color7:       #e2e2e4
+*.color15:      #9b8ee1
+

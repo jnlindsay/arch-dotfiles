@@ -48,6 +48,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+# fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+fcitx
+
 xrandr --output eDP-1 --pos 288x1620 --auto --scale 1.2x1.2 --output HDMI-1 --pos 0x0 --auto --scale 1.5x1.5
 
 exec awesome
