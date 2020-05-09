@@ -580,5 +580,3 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- #####################
 --    JEREMY'S CONFIG
 -- ####################
-
-beautiful.useless_gap = 8
