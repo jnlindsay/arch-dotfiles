@@ -26,7 +26,7 @@ theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 theme.useless_gap   = dpi(5)
-theme.border_width  = dpi(5)
+theme.border_width  = dpi(0)
 theme.border_normal = "#000000"
 theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
@@ -70,6 +70,12 @@ theme.menu_width  = dpi(100)
 -- you wish and access them by using
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
+
+-- #########################################
+-- #          JEREMY'S TITLEBARS           #
+-- #########################################
+
+--theme.titlbe_title_enabled = false
 
 -- Define the image to load
 theme.titlebar_close_button_normal = themes_path.."default/titlebar/close_normal.png"
