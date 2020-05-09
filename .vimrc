@@ -1,10 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-filetype plugin on
-filetype indent on
-let g:tex_flavor='latex'
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -30,3 +26,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+filetype plugin on
+filetype indent on
+let g:tex_flavor='latex'

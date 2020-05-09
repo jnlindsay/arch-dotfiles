@@ -461,7 +461,11 @@ awful.rules.rules = {
                      keys = clientkeys,
                      buttons = clientbuttons,
                      screen = awful.screen.preferred,
-                     placement = awful.placement.no_overlap+awful.placement.no_offscreen
+                     placement = awful.placement.no_overlap+awful.placement.no_offscreen,
+		     -- ##############
+		     -- JEREMY'S BELOW
+		     -- ##############
+		     size_hints_honor = false
      }
     },
 
@@ -575,4 +579,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --    JEREMY'S CONFIG
 -- ####################
 
-beautiful.useless_gap = 5
+beautiful.useless_gap = 8

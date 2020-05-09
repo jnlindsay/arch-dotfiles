@@ -9,6 +9,7 @@ Dotfiles for my Arch Linux installation
 - wallpaper set with Awesome (and not feh etc.)
 - assuming two monitors
 - dependecies: rofi
+- fonts: DM Mono, Apercu
 
 Other:
 
