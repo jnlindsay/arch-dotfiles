@@ -75,7 +75,8 @@ theme.menu_width  = dpi(100)
 -- #          JEREMY'S TITLEBARS           #
 -- #########################################
 
---theme.titlbe_title_enabled = false
+-- used by rc.lua :: awful.rules.rules[1]
+theme.titlebar_title_enabled = false
 
 -- Define the image to load
 theme.titlebar_close_button_normal = themes_path.."default/titlebar/close_normal.png"

@@ -10,6 +10,7 @@ Dotfiles for my Arch Linux installation
 - assuming two monitors
 - dependecies: rofi
 - fonts: DM Mono, Apercu (currently installed like [this](https://github.com/elenapan/dotfiles)
+- Chinese: use fcitx with RIME, with Noto CJK fonts
 
 Other:
 

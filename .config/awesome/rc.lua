@@ -464,10 +464,11 @@ awful.rules.rules = {
                      buttons = clientbuttons,
                      screen = awful.screen.preferred,
                      placement = awful.placement.no_overlap+awful.placement.no_offscreen,
-		     -- ##############
-		     -- JEREMY'S BELOW
-		     -- ##############
-		     size_hints_honor = false
+                    -- ##############
+                    -- JEREMY'S BELOW
+                    -- ##############
+                    size_hints_honor = false,
+                    titlebar_title_enabled = beautiful.titlebar_title_enabled
      }
     },
 
@@ -542,6 +543,18 @@ client.connect_signal("request::titlebars", function(c)
         end)
     )
 
+    local dog = {"hi"}
+
+    -- #########################################################################
+    -- JEREMY'S (remember Lua arrays are 1-based)
+    local title_widget
+    if awful.rules.rules[1]["properties"]["titlebar_title_enabled"] then
+        title_widget = awful.titlebar.widget.titlewidget(c)
+    else
+        title_widget = wibox.widget.textbox("")
+    end
+    -- #########################################################################
+
     awful.titlebar(c) : setup {
         { -- Left
             awful.titlebar.widget.iconwidget(c),
@@ -551,7 +564,8 @@ client.connect_signal("request::titlebars", function(c)
         { -- Middle
             { -- Title
                 align  = "center",
-                widget = awful.titlebar.widget.titlewidget(c)
+	      	-- JEREMY'S BELOW
+               	widget = title_widget
             },
             buttons = buttons,
             layout  = wibox.layout.flex.horizontal
