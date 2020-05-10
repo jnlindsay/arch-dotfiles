@@ -4,7 +4,8 @@ local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
-local themes_path = gfs.get_themes_dir()
+-- local themes_path = gfs.get_themes_dir()
+local themes_path = "~/.config/awesome/themes/"
 
 local theme = {}
 
@@ -31,12 +32,8 @@ theme.border_normal = "#000000"
 theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
 
+-- theme.wallpaper = "~/.config/awesome/themes/default/jfsebastian.png"
 theme.wallpaper = themes_path.."default/jfsebastian.png"
-
--- Generate Awesome icon:
-theme.awesome_icon = theme_assets.awesome_icon(
-    theme.menu_height, theme.bg_focus, theme.fg_focus
-)
 
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
@@ -179,6 +176,11 @@ theme.layout_cornerse = themes_path.."default/layouts/cornersew.png"
 -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 --                                 #LAYOUT
 -- #############################################################################
+
+-- Generate Awesome icon:
+theme.awesome_icon = theme_assets.awesome_icon(
+    theme.menu_height, theme.bg_focus, theme.fg_focus
+)
 
 return theme
 
