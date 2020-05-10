@@ -33,7 +33,7 @@ theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
 
 -- theme.wallpaper = "~/.config/awesome/themes/default/jfsebastian.png"
-theme.wallpaper = themes_path.."default/jfsebastian.png"
+theme.wallpaper = themes_path.."default/jfsebastian_corrected.png"
 
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
