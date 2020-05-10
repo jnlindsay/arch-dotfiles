@@ -467,8 +467,7 @@ awful.rules.rules = {
                     -- ##############
                     -- JEREMY'S BELOW
                     -- ##############
-                    size_hints_honor = false,
-                    titlebar_title_enabled = beautiful.titlebar_title_enabled
+                    size_hints_honor = false
      }
     },
 
@@ -503,7 +502,7 @@ awful.rules.rules = {
         }
       }, properties = { floating = true }},
 
-    -- Add titlebars to normal clients and dialogs
+    -- Add titlebars to normal clients and dialogs1
     { rule_any = {type = { "normal", "dialog" }
       }, properties = { titlebars_enabled = true }
     },
@@ -529,9 +528,14 @@ client.connect_signal("manage", function (c)
     end
 end)
 
--- Add a titlebar if titlebars_enabled is set to true in the rules.
+--- #############################################################################
+---                            TITLEBARS :: BEGIN
+--- #############################################################################
+
+-- add titlebar if `titlebars_enabled` is set to true in the rules.
 client.connect_signal("request::titlebars", function(c)
-    -- buttons for the titlebar
+
+    -- titlebar buttons
     local buttons = gears.table.join(
         awful.button({ }, 1, function()
             c:emit_signal("request::activate", "titlebar", {raise = true})
@@ -543,44 +547,49 @@ client.connect_signal("request::titlebars", function(c)
         end)
     )
 
-    local dog = {"hi"}
-
-    -- #########################################################################
-    -- JEREMY'S (remember Lua arrays are 1-based)
+    -- #jeremy :: titlebar title
     local title_widget
-    if awful.rules.rules[1]["properties"]["titlebar_title_enabled"] then
+    if beautiful.titlebar_title_enabled then
         title_widget = awful.titlebar.widget.titlewidget(c)
     else
         title_widget = wibox.widget.textbox("")
     end
-    -- #########################################################################
+    -- /#
 
+    -- titlebar
     awful.titlebar(c) : setup {
-        { -- Left
+        { -- left
             awful.titlebar.widget.iconwidget(c),
             buttons = buttons,
             layout  = wibox.layout.fixed.horizontal
         },
-        { -- Middle
+        { -- middle
             { -- Title
                 align  = "center",
-	      	-- JEREMY'S BELOW
-               	widget = title_widget
+	      	-- #jeremy
+                widget = title_widget
+            -- /#
             },
             buttons = buttons,
             layout  = wibox.layout.flex.horizontal
         },
-        { -- Right
+        { -- right
             awful.titlebar.widget.floatingbutton (c),
             awful.titlebar.widget.maximizedbutton(c),
-            awful.titlebar.widget.stickybutton   (c),
-            awful.titlebar.widget.ontopbutton    (c),
+            -- awful.titlebar.widget.stickybutton   (c),
+            -- awful.titlebar.widget.ontopbutton    (c),
             awful.titlebar.widget.closebutton    (c),
             layout = wibox.layout.fixed.horizontal()
         },
         layout = wibox.layout.align.horizontal
     }
+
 end)
+
+--- #############################################################################
+---                            TITLEBARS :: END
+--- #############################################################################
+
 
 -- Enable sloppy focus, so that focus follows mouse.
 client.connect_signal("mouse::enter", function(c)
