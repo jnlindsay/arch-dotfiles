@@ -501,8 +501,7 @@ awful.rules.rules = {
         }
     },
 
-    -- no titlebar
-    {
+    { -- no titlebar
         rule_any = {
             name = {
                 "Google Chrome",
@@ -511,6 +510,17 @@ awful.rules.rules = {
         },
         properties = {
             titlebars_enabled = false
+        }
+    },
+
+    {
+        rule_any = {
+            name = {
+                "plank"
+            }
+        },
+        properties = {
+            ontop = true
         }
     }
 

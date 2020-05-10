@@ -58,5 +58,8 @@ xrandr --output eDP-1 --pos 288x1620 --auto --scale 1.2x1.2 --output HDMI-1 --po
 
 export XDG_SESSION_TYPE=X11
 
+picom -b -c
+#plank
+
 exec /usr/bin/awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
 exec awesome
