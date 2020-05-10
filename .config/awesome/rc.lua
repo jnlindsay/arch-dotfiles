@@ -217,7 +217,7 @@ globalkeys = gears.table.join(
     --      ###########################
     --      JEREMY'S CUSTOM KEYBINDINGS
     --      ###########################
-    awful.key({ modkey,           }, "d",      function () awful.spawn("rofi -show run") end,
+    awful.key({ modkey,           }, "d",      function () awful.spawn.with_shell("bash ~/.config/rofi/drun.sh") end,
               {description="Rofi run", group="Jeremy's custom keybindings"}),
     --      ###########################
     --      O-O-O-O-O-O-O-O-O-O-O-O-O-O
