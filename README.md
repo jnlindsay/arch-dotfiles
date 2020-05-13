@@ -12,6 +12,7 @@ Dotfiles for my Arch Linux installation
 - fonts: DM Mono, Apercu (currently installed like [this](https://github.com/elenapan/dotfiles)
 - Chinese: use fcitx with RIME, with Noto CJK fonts
 - rofi (not rofi-git) with [this](https://github.com/Murzchnvok/nord-rofi-theme) page. Also have bash launcher.
+- picom for blur, must be run with `--experimental-backends`
 
 Other:
 
