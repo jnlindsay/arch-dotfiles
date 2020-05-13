@@ -119,7 +119,7 @@ theme.menu_width  = dpi(100)
 -- vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 -- #jeremy :: titlebar title
-theme.titlebar_title_enabled = true
+theme.titlebar_title_enabled = false
 -- /#
 
 -- Define the image to load
