@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="250mm"
+   height="250mm"
+   viewBox="0 0 250 250"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="close_normal.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-45.830538"
+     inkscape:cy="391.12545"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="2840"
+     inkscape:window-height="1492"
+     inkscape:window-x="20"
+     inkscape:window-y="64"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       transform="scale(0.26458333)"
+       d="M 472.44141 257.72266 A 214.71831 214.71831 0 0 0 257.72266 472.44141 A 214.71831 214.71831 0 0 0 472.44141 687.16016 A 214.71831 214.71831 0 0 0 687.16016 472.44141 A 214.71831 214.71831 0 0 0 472.44141 257.72266 z M 472.44141 356.96484 A 115.4754 115.4754 0 0 1 587.91602 472.44141 A 115.4754 115.4754 0 0 1 472.44141 587.91602 A 115.4754 115.4754 0 0 1 356.96484 472.44141 A 115.4754 115.4754 0 0 1 472.44141 356.96484 z "
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:105.982;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path849" />
+  </g>
+</svg>

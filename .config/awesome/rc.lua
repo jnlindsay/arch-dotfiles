@@ -505,7 +505,7 @@ awful.rules.rules = {
         rule_any = {
             name = {
                 "Google Chrome",
-                "urxvt"
+                -- "urxvt"
             }
         },
         properties = {
@@ -576,27 +576,28 @@ client.connect_signal("request::titlebars", function(c)
     -- titlebar
     awful.titlebar(c) : setup {
         { -- left
-            awful.titlebar.widget.iconwidget(c),
-            buttons = buttons,
-            layout  = wibox.layout.fixed.horizontal
+        buttons = buttons,
+            awful.titlebar.widget.iconwidget(c),        
+            layout = wibox.layout.fixed.horizontal()
         },
         { -- middle
-            { -- Title
+            { -- title
                 align  = "center",
-	      	-- #jeremy
+                awful.titlebar.widget.iconwidget(c),
+                -- #jeremy
                 widget = title_widget
-            -- /#
+                -- /#
             },
             buttons = buttons,
             layout  = wibox.layout.flex.horizontal
         },
         { -- right
+            awful.titlebar.widget.closebutton(c),
+            awful.titlebar.widget.minimizebutton(c),
             awful.titlebar.widget.floatingbutton (c),
             awful.titlebar.widget.maximizedbutton(c),
-            -- awful.titlebar.widget.stickybutton   (c),
-            -- awful.titlebar.widget.ontopbutton    (c),
-            awful.titlebar.widget.closebutton    (c),
-            layout = wibox.layout.fixed.horizontal()
+            awful.titlebar.widget.ontopbutton(c),
+            layout = wibox.layout.fixed.horizontal(),
         },
         layout = wibox.layout.align.horizontal
     }
