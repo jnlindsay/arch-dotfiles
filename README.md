@@ -20,3 +20,6 @@ Other:
 - xorg.conf.d file for natural scrolling
 - xbindkeysrc with GUI
 - use Vundle: vim-latex
+- [disable GRUB quiet mode](https://wiki.archlinux.org/index.php/Kernel_parameters#GRUB)
+- use NetworkManager with network-manager-applet
+- use Nvidia Optimus if using two GPUs (Intel integrated graphics and Nvidia GPU)
