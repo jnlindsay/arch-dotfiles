@@ -79,7 +79,19 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.se,
 }
 -- }}}
+-- #############################################################################
+--                               #AUTOSTART
+-- vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
+awful.spawn.with_shell(
+    'if (xrdb -query | grep -q "^awesome\\.started:\\s*true$"); then exit; fi;' ..
+    'xrdb -merge <<< "awesome.started:true";' ..
+    'nm-applet;' ..
+    'dex --environment Awesome --autostart --search-paths "$XDG_CONFIG_DIRS/autostart:$XDG_CONFIG_HOME/autostart"'
+)
+
+-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--                              #/AUTOSTART
 -- #############################################################################
 --                                 #MENU
 -- vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -579,8 +591,8 @@ client.connect_signal("request::titlebars", function(c)
             awful.titlebar.widget.closebutton(c),
             awful.titlebar.widget.minimizebutton(c),
             awful.titlebar.widget.ontopbutton(c),
-            awful.titlebar.widget.maximizedbutton(c),
             awful.titlebar.widget.floatingbutton (c),
+            awful.titlebar.widget.maximizedbutton(c),
             layout = wibox.layout.fixed.horizontal()
         },
         { -- middle
