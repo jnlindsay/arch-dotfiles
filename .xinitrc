@@ -5,6 +5,10 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+#xrandr --output eDP-1-1 --pos 288x1620 --scale 1.2x1.2 --output HDMI-1-1 --pos 0x0 --scale 1.5x1.5
+xrandr --auto
+
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
@@ -54,12 +58,12 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 fcitx
 
-xrandr --output eDP-1 --pos 288x1620 --auto --scale 1.2x1.2 --output HDMI-1 --pos 0x0 --auto --scale 1.5x1.5
-
 export XDG_SESSION_TYPE=X11
 
-picom -b -c
-#plank
+picom -b -c --experimental-backends
+
+xbindkeys
+#pasystray
 
 exec /usr/bin/awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
 exec awesome
